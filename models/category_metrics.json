@@ -1,0 +1,116 @@
+{
+  "model": "TF-IDF word + character n-grams with Logistic Regression",
+  "train_rows": 2477,
+  "test_rows": 620,
+  "accuracy": 0.9435483870967742,
+  "labels": [
+    "books",
+    "calculator",
+    "hostel essentials",
+    "lab equipment",
+    "others",
+    "stationery"
+  ],
+  "classification_report": {
+    "books": {
+      "precision": 0.9696969696969697,
+      "recall": 1.0,
+      "f1-score": 0.9846153846153847,
+      "support": 96.0
+    },
+    "calculator": {
+      "precision": 1.0,
+      "recall": 0.9714285714285714,
+      "f1-score": 0.9855072463768116,
+      "support": 70.0
+    },
+    "hostel essentials": {
+      "precision": 0.9345238095238095,
+      "recall": 0.9345238095238095,
+      "f1-score": 0.9345238095238095,
+      "support": 168.0
+    },
+    "lab equipment": {
+      "precision": 0.8857142857142857,
+      "recall": 0.96875,
+      "f1-score": 0.9253731343283582,
+      "support": 96.0
+    },
+    "others": {
+      "precision": 0.9354838709677419,
+      "recall": 0.8365384615384616,
+      "f1-score": 0.883248730964467,
+      "support": 104.0
+    },
+    "stationery": {
+      "precision": 0.9655172413793104,
+      "recall": 0.9767441860465116,
+      "f1-score": 0.9710982658959537,
+      "support": 86.0
+    },
+    "accuracy": 0.9435483870967742,
+    "macro avg": {
+      "precision": 0.9484893628803528,
+      "recall": 0.9479975047562257,
+      "f1-score": 0.9473944286174641,
+      "support": 620.0
+    },
+    "weighted avg": {
+      "precision": 0.9442649771915265,
+      "recall": 0.9435483870967742,
+      "f1-score": 0.9430914902456979,
+      "support": 620.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      96,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      68,
+      1,
+      0,
+      1,
+      0
+    ],
+    [
+      2,
+      0,
+      157,
+      3,
+      5,
+      1
+    ],
+    [
+      0,
+      0,
+      1,
+      93,
+      0,
+      2
+    ],
+    [
+      0,
+      0,
+      8,
+      9,
+      87,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      0,
+      84
+    ]
+  ],
+  "note": "Random stratified holdout evaluation; validate on real campus data before relying on predictions."
+}

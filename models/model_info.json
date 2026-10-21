@@ -1,0 +1,18 @@
+{
+  "category_model_file": "category_classifier.joblib",
+  "input_fields": [
+    "title",
+    "description"
+  ],
+  "output_field": "predicted_category",
+  "categories": [
+    "books",
+    "calculator",
+    "hostel essentials",
+    "lab equipment",
+    "others",
+    "stationery"
+  ],
+  "recommendation_method": "TF-IDF cosine similarity over title + description, with optional category/listing_type/location filters",
+  "important": "Never use user IDs, owner IDs, emails, names, or other direct identifiers as model features."
+}
